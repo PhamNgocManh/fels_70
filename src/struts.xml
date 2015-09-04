@@ -32,20 +32,14 @@
 			<result>HomePage</result>
 		</action>
 
-		<action name="login" class="springSessionAction" method="newSession">
-			<result name="success">Login</result>
-			<result name="error" type="redirect">/</result>
-		</action>
-
-		<action name="log" class="springSessionAction" method="login">
+		<action name="admin" class="springSessionAction" method="login">
 			<result name="success" type="redirect">/users/${user.userId}/show
 			</result>
 			<result name="error" type="redirect">/login</result>
-			<result name="none" type="redirect">/</result>
 		</action>
 
-		<action name="logout" class="springSessionAction" method="logout">
-			<result name="success" type="redirect">/</result>
+		<action name="login">
+			<result>Login</result>
 		</action>
 	</package>
 

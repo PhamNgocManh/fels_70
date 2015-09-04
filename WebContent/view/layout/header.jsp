@@ -5,7 +5,15 @@
 <%@ taglib uri="/struts-tags" prefix="s"%>
 <%@ taglib prefix="authz"
 	uri="http://www.springframework.org/security/tags"%>
-<div id="top-header"></div>
+<div id="header-main">
+	<div id="logo">
+		<h1>Framgia Japanese Learning System</h1>
+	</div>
+	<div id="menu-main">
+		<a href="<s:url value="/users/"/>">Users</a> <a
+			href="<s:url value="/categories/"/>">Categories</a> <a
+			href="<s:url value="/words/"/>">Words</a> <a id="logout"
+			href="/fels_70/j_spring_security_logout">Logout</a>
 
-<div id="bottom-header">
+	</div>
 </div>

@@ -22,3 +22,16 @@
 		<td><s:property value="lesson.result" /></td>
 	</tr>
 </table>
+<s:label key="Words" />
+<table>
+	<tr>
+		<td>Word</td>
+		<td>Audio</td>
+	</tr>
+	<s:iterator value="lesson.words">
+		<tr>
+			<td><s:property value="wordContent" /></td>
+			<td><s:property value="audio" /></td>
+		</tr>
+	</s:iterator>
+</table>

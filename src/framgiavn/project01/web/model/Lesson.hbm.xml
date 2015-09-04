@@ -16,6 +16,12 @@
 		<many-to-one name="user" column="user_id" lazy="false"
 			fetch="join" />
 
+		<bag name="words" lazy="false" cascade="all" table="lesson_word">
+			<key column="lesson_id" />
+			<many-to-many column="word_id"
+				class="framgiavn.project01.web.model.Word" />
+		</bag>
+
 		<property name="result" type="java.lang.Integer">
 			<column name="result" length="10" />
 		</property>

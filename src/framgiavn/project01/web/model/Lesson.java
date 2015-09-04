@@ -1,10 +1,12 @@
 package framgiavn.project01.web.model;
 
 import java.io.Serializable;
+import java.util.List;
 
 public class Lesson implements Serializable {
     private int lessonId;
     private Category category;
+    private List<Word> words;
     private User user;
     private int result;
 
@@ -14,6 +16,14 @@ public class Lesson implements Serializable {
 
     public void setCategory(Category category) {
         this.category = category;
+    }
+
+    public List<Word> getWords() {
+        return words;
+    }
+
+    public void setWords(List<Word> words) {
+        this.words = words;
     }
 
     public User getUser() {

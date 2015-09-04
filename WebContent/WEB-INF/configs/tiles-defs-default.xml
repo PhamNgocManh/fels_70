@@ -37,7 +37,8 @@
 	</definition>
 
 	<definition name="Login" extends="Default.Web">
-		<put-attribute name="body" value="/view/users/login.jsp" />
+		<put-attribute name="header" value="/view/layout/blank.jsp" />
+		<put-attribute name="body" value="/view/layout/login.jsp" />
 		<put-list-attribute name="js">
 		</put-list-attribute>
 		<put-list-attribute name="css">
